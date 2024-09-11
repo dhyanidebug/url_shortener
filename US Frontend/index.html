@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>URL Shortener</h1>
+
+    <div>
+        <h2>Shorten a URL</h2>
+        <form id="shorten-form">
+            <input type="url" id="long-url" placeholder="Enter long URL" required>
+            <button type="submit">Shorten URL</button>
+        </form>
+        <p id="shorten-result"></p>
+    </div>
+
+    <div>
+        <h2>List All Documents</h2>
+        <button id="list-documents">List Documents</button>
+        <table id="documents-table" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Key</th>
+                    <th>Long URL</th>
+                    <th>Short Url</th>
+                    <th>Impression</th>
+                </tr>
+            </thead>
+            <tbody id="document-list">
+                <!-- Document rows will be injected here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
